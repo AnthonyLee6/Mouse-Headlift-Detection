@@ -1,0 +1,61 @@
+# Project definitions (do not edit)
+Task: Mouse_Head_Lift_Detection
+scorer: User
+date: Apr13
+multianimalproject: false
+identity:
+
+# Project path (change when moving around)
+project_path: /root/dlc_infer_2166_2171/project
+
+# Annotation data set configuration (and individual video cropping parameters)
+video_sets:
+  /root/dlc_infer_2166_2171/videos/ct 2166 PBS.WMV:
+    crop: '0, 704, 0, 288'
+  /root/dlc_infer_2166_2171/videos/ct 2171 CNO.WMV:
+    crop: '0, 704, 0, 288'
+bodyparts:
+- nose
+- head_top
+- left_ear
+- right_ear
+
+start: 0
+stop: 1
+numframes2pick: 20
+
+# Plotting configuration
+skeleton:
+- - nose
+  - head_top
+- - nose
+  - left_ear
+- - nose
+  - right_ear
+skeleton_color: black
+pcutoff: 0.6
+dotsize: 10
+alphavalue: 0.7
+colormap: rainbow
+
+# Training,Evaluation and Analysis configuration
+TrainingFraction:
+- 0.95
+iteration: 0
+default_net_type: resnet_50
+default_augmenter: default
+snapshotindex: -1
+batch_size: 8
+
+# Cropping Parameters (for analysis and outlier frame detection)
+cropping: false
+x1: 0
+x2: 640
+y1: 277
+y2: 624
+
+# Refinement configuration
+corner2move2:
+- 50
+- 50
+move2corner: true

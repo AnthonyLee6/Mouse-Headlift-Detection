@@ -1,0 +1,66 @@
+# ========================================================
+# Git Ignore Configuration for Mouse Headlift Detection
+# ========================================================
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Distribution and packaging artifacts
+build/
+dist/
+*.egg-info/
+*.egg
+*.exe
+*.zip
+*.tar.gz
+*.whl
+
+# Video and large media files (Use cloud storage or releases)
+*.avi
+*.mp4
+*.wmv
+*.mov
+*.mkv
+*.flv
+videos/
+
+# DeepLabCut model checkpoints and large weight files
+*.data-00000-of-00001
+*.index
+*.meta
+dlc-models/
+snapshot-*
+
+# Temporary output and logs
+*.log
+_e2e_test*
+temp/
+output/
+_标注图导出/
+诊断图/
+
+# Secret and configuration files
+.env
+*.secret
+*.key
+*.pem
+
+# IDE and operating system files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.workbuddy-ai/
